@@ -1,0 +1,55 @@
+127.0.0.1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_env": {
+            "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+            "HOME": "/home/grinv",
+            "LANG": "en_US.UTF-8",
+            "LC_CTYPE": "C.UTF-8",
+            "LC_TERMINAL": "iTerm2",
+            "LC_TERMINAL_VERSION": "3.4.23",
+            "LOGNAME": "grinv",
+            "MOTD_SHOWN": "pam",
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+            "PWD": "/home/grinv",
+            "SHELL": "/bin/bash",
+            "SHLVL": "0",
+            "SSH_CLIENT": "10.0.2.2 54328 22",
+            "SSH_CONNECTION": "10.0.2.2 54328 10.0.2.15 22",
+            "SSH_TTY": "/dev/pts/1",
+            "TERM": "xterm-new",
+            "USER": "grinv",
+            "XDG_RUNTIME_DIR": "/run/user/1000",
+            "XDG_SESSION_CLASS": "user",
+            "XDG_SESSION_ID": "45",
+            "XDG_SESSION_TYPE": "tty",
+            "_": "/bin/sh"
+        },
+        "ansible_hostname": "grinv",
+        "ansible_locally_reachable_ips": {
+            "ipv4": [
+                "10.0.2.15",
+                "127.0.0.0/8",
+                "127.0.0.1",
+                "172.17.0.1",
+                "172.18.0.1"
+            ],
+            "ipv6": [
+                "::1",
+                "fe80::42:25ff:fe4e:8bf",
+                "fe80::42:aaff:fe25:c19",
+                "fe80::bc4a:57ff:fe7a:e5fd",
+                "fe80::ec56:4cff:fe2e:2c4a",
+                "fec0::bc4a:57ff:fe7a:e5fd"
+            ]
+        },
+        "ansible_lsb": {
+            "codename": "jammy",
+            "description": "Ubuntu 22.04.3 LTS",
+            "id": "Ubuntu",
+            "major_release": "22",
+            "release": "22.04"
+        },
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false
+}

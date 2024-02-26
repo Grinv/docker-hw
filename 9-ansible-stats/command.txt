@@ -1,0 +1,1 @@
+ansible -i hosts.ini -m setup -a "filter=ansible_hostname,ansible_env,ansible_locally_reachable_ips,ansible_lsb" demo

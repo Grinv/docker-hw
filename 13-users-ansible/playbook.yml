@@ -1,0 +1,12 @@
+---
+- name: SSH
+  hosts: local
+  become: true
+  roles:
+    - ssh
+
+- name: Create users
+  hosts: users
+  become: true
+  roles:
+    - user_create

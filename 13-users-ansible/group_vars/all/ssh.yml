@@ -1,0 +1,3 @@
+---
+local_ssh_path: /tmp/temp_ssh_keys
+local_ssh_file_prefix: docker_stack.

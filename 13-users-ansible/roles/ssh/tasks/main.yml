@@ -1,0 +1,11 @@
+---
+- name: Создаем директорию для SSH ключей
+  ansible.builtin.file:
+    path: "{{ local_ssh_path }}"
+    mode: "0600"
+    state: directory
+
+- name: Генерация ssh ключа
+  loop: "{{ users }}"
+  community.crypto.openssh_keypair:
+    path: "{{ local_ssh_path }}/{{ local_ssh_file_prefix }}{{ item.login }}"

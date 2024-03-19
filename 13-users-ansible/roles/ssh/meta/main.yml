@@ -1,0 +1,7 @@
+galaxy_info:
+  description: Генерация SSH ключа для новых пользователей
+  author: Grinv
+  license: MIT
+  min_ansible_version: "2.16"
+  platforms:
+    - name: Ubuntu

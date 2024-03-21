@@ -1,0 +1,25 @@
+version: "3"
+services:
+  grafana:
+    image: grafana/grafana-enterprise:10.4.0-ubuntu
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    networks:
+      - mynetwork
+    environment:
+      - GT_SECURITY_ADMIN_USER=admin
+      - GT_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_storage:/var/lib/grafana
+      - ./datasources:/etc/grafana/datasources
+      - ./dashboards:/etc/grafana/dashboards
+      - ./plugins:/var/lib/grafana/plugins
+
+volumes:
+  grafana_storage: {}
+
+networks:
+  mynetwork:
+    external: true

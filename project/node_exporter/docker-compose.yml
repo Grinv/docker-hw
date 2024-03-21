@@ -1,0 +1,13 @@
+version: "3"
+services:
+  node_exporter:
+    image: prom/node-exporter:v1.7.0
+    container_name: node_exporter
+    restart: unless-stopped
+    ports:
+      - 9100:9100
+    networks:
+      - mynetwork
+networks:
+  mynetwork:
+    external: true
